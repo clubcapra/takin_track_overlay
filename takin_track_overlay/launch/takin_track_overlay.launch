@@ -1,0 +1,17 @@
+<launch>
+    <!-- <arg name="source" default="/camera_3d/rgb/image_raw" doc=""/> -->
+    <arg name="source" default="/usb_cam/image_raw" doc=""/>
+    <arg name="source_encoding" default="bgr8" doc=""/>
+    <arg name="sensitivity" default="20" />
+    <arg name="blur" default="30" />
+
+
+<!-- Capra Hazardous detection node-->
+    <node pkg="takin_track_overlay" type="takin_track_overlay" name="takin_track_overlay" output="screen">
+    <param name="source"  type="string" value="$(arg source)" />
+    <param name="source_encoding"  type="string" value="$(arg source_encoding)" />
+    <param name="sensitivity"  type="int" value="$(arg sensitivity)" />
+    <param name="blur" type="int" value="$(arg blur)" />
+    </node> 
+
+</launch>
