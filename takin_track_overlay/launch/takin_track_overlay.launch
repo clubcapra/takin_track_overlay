@@ -1,6 +1,6 @@
 <launch>
-    <!-- <arg name="source" default="/camera_3d/rgb/image_raw" doc=""/> -->
-    <arg name="source" default="/usb_cam/image_raw" doc=""/>
+    <arg name="source" default="/camera_3d/rgb/image_raw" doc=""/> 
+    <!-- <arg name="source" default="/usb_cam/image_raw" doc=""/> -->
     <arg name="source_encoding" default="bgr8" doc=""/>
     <arg name="sensitivity" default="20" />
     <arg name="blur" default="30" />
